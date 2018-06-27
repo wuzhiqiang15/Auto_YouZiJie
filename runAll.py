@@ -1,4 +1,4 @@
-# 程序运行入口
+# 程序运行的入口
 
 import os
 import unittest
@@ -18,6 +18,8 @@ class AllTest:
         on_off = localReadConfig.get_email("on_off")
         # case执行的列表
         self.caseListFile = os.path.join(readConfig.proDir, "caselist.txt")
+        #print(self.caseList)
+
         # case文件路径
         self.caseFile = os.path.join(readConfig.proDir, "testCase")
         self.caseList = []
